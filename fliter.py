@@ -27,7 +27,6 @@ img_after = y.eval(feed_dict = {x:img})
 
 
 
-
 if __name__ == '__main__':
 #    plt.imshow(img.reshape([256,256]))
 #    plt.imshow(img_after.reshape([256,256]))
