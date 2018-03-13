@@ -21,7 +21,7 @@ def rename():
         # Newdir = os.path.join(path, 'S' + filetype)
 
 # 文件名前自动增加S
-        Newdir = os.path.join(path, ('Cover'+filename) + filetype)
+#         Newdir = os.path.join(path, ('Cover'+filename) + filetype)
 
 # 文件序号一次递增
 #         Newdir = os.path.join(path, str(count) + filetype)
