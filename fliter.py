@@ -20,7 +20,7 @@ net = Conv2d(net, 1, (5, 5), (1, 1), act=tf.identity,
 y = net.outputs
 tl.layers.initialize_global_variables(sess)
 
-img = cv2.imread('cover.pgm',0).astype(np.float32).reshape([1,512,512,1])
+img = cv2.imread('1_cover.pgm',0).astype(np.float32).reshape([1,512,512,1])
 
 img_after = y.eval(feed_dict = {x:img})
 
