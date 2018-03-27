@@ -1,14 +1,14 @@
 #! /usr/bin/python3
 # -*- coding: utf-8 -*-
 # @Time    : 2018/3/12 0012 16:17
-# @Author  :
+# @Author  : jsz
 # @Software: PyCharm
 import os
 
 
 def rename():
     count=1
-    path = 'F:\CAE_CNN\data\cover'
+    path = 'F:\CAE_CNN\data\lldata'
     filelist = os.listdir(path)
     for files in filelist:
         Olddir = os.path.join(path, files)
@@ -21,7 +21,7 @@ def rename():
         # Newdir = os.path.join(path, 'S' + filetype)
 
 # 文件名前自动增加S
-#         Newdir = os.path.join(path, ('Cover'+filename) + filetype)
+#         Newdir = os.path.join(path, ('Stego.'+filename) + filetype)
 
 # 文件序号一次递增
 #         Newdir = os.path.join(path, str(count) + filetype)
