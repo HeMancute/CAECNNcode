@@ -60,27 +60,38 @@ def run_training():
     coord = tf.train.Coordinator()
     threads = tf.train.start_queue_runners(sess=sess, coord=coord)
 
-    try:
-        # 执行MAX_STEP步的训练，一步一个batch
-        for step in np.arange(MAX_STEP):
-            if coord.should_stop():
-                break
-                # 启动以下操作节点，有个疑问，为什么train_logits在这里没有开启？
-            _, tra_loss, tra_acc = sess.run([train_op, train_loss, train__acc])
-            # 每隔50步打印一次当前的loss以及acc，同时记录log，写入writer
-            if step % 2 == 0:
-                print('Step %d, train loss = %.2f, train accuracy = %.2f%%' % (step, tra_loss, tra_acc * 100.0))
-                summary_str = sess.run(summary_op)
-                train_writer.add_summary(summary_str, step)
-                # 每隔2000步，保存一次训练好的模型
-            if step % 2000 == 0 or (step + 1) == MAX_STEP:
-                checkpoint_path = os.path.join(logs_train_dir, 'model.ckpt')
-                saver.save(sess, checkpoint_path, global_step=step)
-
-    except tf.errors.OutOfRangeError:
-        print('Done training -- epoch limit reached')
-    finally:
-        coord.request_stop()
-        sess.close()
+    for step in np.arange(MAX_STEP):
+        _, tra_loss, tra_acc = sess.run([train_op, train_loss, train__acc])
+        # 每隔50步打印一次当前的loss以及acc，同时记录log，写入writer
+        if step % 2 == 0:
+            print('Step %d, train loss = %.2f, train accuracy = %.2f%%' % (step, tra_loss, tra_acc * 100.0))
+            summary_str = sess.run(summary_op)
+            train_writer.add_summary(summary_str, step)
+            # 每隔2000步，保存一次训练好的模型
+        if step % 2000 == 0 or (step + 1) == MAX_STEP:
+            checkpoint_path = os.path.join(logs_train_dir, 'model.ckpt')
+            saver.save(sess, checkpoint_path, global_step=step)
+    # try:
+    #     # 执行MAX_STEP步的训练，一步一个batch
+    #     for step in np.arange(MAX_STEP):
+    #         # if coord.should_stop():
+    #             # break
+    #             # 启动以下操作节点，有个疑问，为什么train_logits在这里没有开启？
+    #         _, tra_loss, tra_acc = sess.run([train_op, train_loss, train__acc])
+    #         # 每隔50步打印一次当前的loss以及acc，同时记录log，写入writer
+    #         if step % 2 == 0:
+    #             print('Step %d, train loss = %.2f, train accuracy = %.2f%%' % (step, tra_loss, tra_acc * 100.0))
+    #             summary_str = sess.run(summary_op)
+    #             train_writer.add_summary(summary_str, step)
+    #             # 每隔2000步，保存一次训练好的模型
+    #         if step % 2000 == 0 or (step + 1) == MAX_STEP:
+    #             checkpoint_path = os.path.join(logs_train_dir, 'model.ckpt')
+    #             saver.save(sess, checkpoint_path, global_step=step)
+    #
+    # except tf.errors.OutOfRangeError:
+    #     print('Done training -- epoch limit reached')
+    # finally:
+    #     coord.request_stop()
+    #     sess.close()
 
 run_training()
