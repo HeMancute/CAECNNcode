@@ -83,7 +83,6 @@ def inference(images, batch_size, n_classes):
 
     return softmax_linear
 
-
 def losses(logits, labels):
     with tf.variable_scope('loss') as scope:
         cross_entropy = tf.nn.sparse_softmax_cross_entropy_with_logits \
