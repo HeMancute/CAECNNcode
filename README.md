@@ -1,4 +1,4 @@
-#  Deeplearning Steganalysis
+#  Deeplearning for Steganalysis
 
 **Steganography and Steganalysis**  
 
@@ -21,6 +21,10 @@ Corresponding to steganography, steganalysis is the art of detecting hidden data
 * 2: the subtraction result of cover and stego 
  
 ![subtraction](https://github.com/jiangszzzzz/CAECNNcode/blob/master/data/subtraction.jpg?raw=true)
+
+
+# deeplearning for steganalysis
+
 
 
 
