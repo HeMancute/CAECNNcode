@@ -9,11 +9,20 @@ Steganography is the science to conceal secrect messages in the images though sl
 Corresponding to steganography, steganalysis is the art of detecting hidden data in images. Usually, this task is formulated as a binary classification problem to distinguish between cover and stego. 
 
 
-# LSB steganography cover and stego 
- * cover and stego: 
-![cover]:()
- * the subtraction result of cover stego : 
-![cover]:()
+# LSB steganography cover and stego
+
+
+
+* 1: cover and stego
+ 
+![tu1](https://github.com/jiangszzzzz/CAECNNcode/blob/master/data/coverstego.jpg?raw=true)
+
+
+* 2: the subtraction result of cover stego 
+ 
+![subtraction](https://github.com/jiangszzzzz/CAECNNcode/blob/master/data/subtraction.jpg?raw=true)
+
+
 
 
 
