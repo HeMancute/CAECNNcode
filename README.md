@@ -24,9 +24,11 @@ Corresponding to steganography, steganalysis is the art of detecting hidden data
 
 
 # deeplearning for steganalysis(some results)
+* 3: The training process 
+![Training process](https://github.com/jiangszzzzz/CAECNNcode/blob/master/data/S-UNIWARD0.2.png?raw=true)
 
-![Training process](https://github.com/jiangszzzzz/CAECNNcode/blob/master/data/subtraction.jpg?raw=true)
-
+* 4: WOW0.5random_CNN training and validation accurcy 
+![Training process](https://github.com/jiangszzzzz/CAECNNcode/blob/master/data/WOW0.5random_CNN.png?raw=true)
 
 
 
