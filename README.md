@@ -24,7 +24,7 @@ Corresponding to steganography, steganalysis is the art of detecting hidden data
 
 
 # deeplearning for steganalysis(some results)
-* 3: The training process 
+* 3: The training process，the net begins to converge at 50,000 step 
 ![Training process](https://github.com/jiangszzzzz/CAECNNcode/blob/master/data/S-UNIWARD0.2.png?raw=true)
 
 * 4: WOW0.5random_CNN training and validation accurcy 
