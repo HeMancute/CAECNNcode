@@ -34,9 +34,6 @@ Different from traditional computer vision task, the goal of image steganalysis 
 
 * 4: WOW0.5random_CNN training and validation accurcy. It can be seen from the validation loss value that the model is not overfitted. Amazing fitting ability.
 
-
-[//]: # ![Training process](https://github.com/jiangszzzzz/CAECNNcode/blob/master/data/WOW0.5random_CNN.png?raw=true)
-
 <div align=center><img src="https://github.com/jiangszzzzz/CAECNNcode/blob/master/data/WOW0.5random_CNN.png?raw=true"/></div>
 
 ***
