@@ -18,7 +18,7 @@ Corresponding to steganography, steganalysis is the art of detecting hidden data
 ![tu1](https://github.com/jiangszzzzz/CAECNNcode/blob/master/data/coverstego.jpg?raw=true)
 
 
-* 2: the subtraction result of cover and stego 
+* 2: the subtraction result of cover and stego(small payload)
  
 ![subtraction](https://github.com/jiangszzzzz/CAECNNcode/blob/master/data/subtraction.jpg?raw=true)
 
