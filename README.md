@@ -11,8 +11,6 @@ Corresponding to steganography, steganalysis is the art of detecting hidden data
 
 # LSB steganography cover and stego
 
-
-
 * 1: cover(left) and stego(right)
  
 ![tu1](https://github.com/jiangszzzzz/CAECNNcode/blob/master/data/coverstego.jpg?raw=true)
@@ -23,7 +21,12 @@ Corresponding to steganography, steganalysis is the art of detecting hidden data
 ![subtraction](https://github.com/jiangszzzzz/CAECNNcode/blob/master/data/subtraction.jpg?raw=true)
 
 
-# deeplearning for steganalysis(some results)
+# deeplearning for steganalysis
+Different from traditional computer vision task, the goal of image steganalysis is to find embedding operation which may be extremely low noise to the cover. So there's no maxpooling layer in my network which could destory small imformations or features caused by Steganography.
+
+***
+# some results
+
 * 3: The training process，the net begins to converge at 50,000 step（5 epoch） 
 ![Training process](https://github.com/jiangszzzzz/CAECNNcode/blob/master/data/S-UNIWARD0.2.png?raw=true)
 
