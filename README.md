@@ -12,7 +12,7 @@ Corresponding to steganography, steganalysis is the art of detecting hidden data
 ## LSB steganography cover and stego
 
 * 1: cover(left) and stego(right)
- 
+<div align=center><img height="350" src="https://github.com/jiangszzzzz/CAECNNcode/blob/master/data/coverstego.jpg?raw=true"/></div>
 ![tu1](https://github.com/jiangszzzzz/CAECNNcode/blob/master/data/coverstego.jpg?raw=true)
 
 
