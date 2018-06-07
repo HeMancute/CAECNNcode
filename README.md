@@ -36,7 +36,8 @@ Different from traditional computer vision task, the goal of image steganalysis 
 <div align=center><img weight=450 height=600 src="https://github.com/jiangszzzzz/CAECNNcode/blob/master/data/WOW0.5random_CNN.png?raw=true"/></div>
 
 ***
-
+# reference
+<http://www.ws.binghamton.edu/fridrich/publications.html>
 
 
 
